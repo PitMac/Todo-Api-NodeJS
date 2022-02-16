@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const {
-  getTodo,
+  getTodos,
   getTodo,
   postTodo,
   putTodo,
@@ -8,7 +8,7 @@ const {
 } = require("../controllers/todo.controller");
 const route = Router();
 
-route.get("/todo", getTodo);
+route.get("/todos", getTodos);
 route.get("/todo/:id", getTodo);
 route.put("/todo/:id", putTodo);
 route.delete("/todo/:id", deleteTodo);
